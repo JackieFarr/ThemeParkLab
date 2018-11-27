@@ -1,4 +1,4 @@
-public class Playground extends Attraction implements ISecurity {
+public class Playground extends Attraction implements ISecurity, IReviewed {
 
     public Playground(String name, int rating, double price){
         super(name, rating, price);
@@ -10,5 +10,13 @@ public class Playground extends Attraction implements ISecurity {
         } else {
             return true;
         }
+    }
+
+    public int getRating(){
+        return this.rating;
+    }
+
+    public String getName(){
+        return this.name;
     }
 }

@@ -1,4 +1,4 @@
-public class Rollercoaster extends Attraction implements ITicketed,ISecurity {
+public class Rollercoaster extends Attraction implements ITicketed,ISecurity, IReviewed {
 
     public Rollercoaster(String name, int rating, double price){
         super(name, rating, price);
@@ -24,5 +24,13 @@ public class Rollercoaster extends Attraction implements ITicketed,ISecurity {
                 {
             return false;
         }
+    }
+
+    public int getRating(){
+        return this.rating;
+    }
+
+    public String getName(){
+        return this.name;
     }
 }

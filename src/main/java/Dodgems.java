@@ -1,4 +1,4 @@
-public class Dodgems extends Attraction implements ITicketed {
+public class Dodgems extends Attraction implements ITicketed, IReviewed {
 
 //    Visitor visitor;
 
@@ -16,6 +16,14 @@ public class Dodgems extends Attraction implements ITicketed {
         } else {
             return this.price;
         }
+    }
+
+    public int getRating(){
+        return this.rating;
+    }
+
+    public String getName(){
+        return this.name;
     }
 
 

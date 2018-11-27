@@ -1,4 +1,4 @@
-public class BarStall extends Stall implements ISecurity{
+public class BarStall extends Stall implements ISecurity, IReviewed{
 
     public BarStall(String name, String ownerName, int parkingSpot, int rating){
         super(name, ownerName, parkingSpot, rating);
@@ -10,5 +10,13 @@ public class BarStall extends Stall implements ISecurity{
         } else {
               return false;
              }
+    }
+
+    public int getRating(){
+        return this.rating;
+    }
+
+    public String getName(){
+        return this.name;
     }
 }
