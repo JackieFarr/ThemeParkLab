@@ -1,7 +1,7 @@
 public class Visitor {
 
    protected int age;
-   private double height;
+   protected double height;
    protected double money;
 
    public Visitor(int age, double height, double money){

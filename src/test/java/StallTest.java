@@ -9,7 +9,7 @@ public class StallTest {
 
     @Before
     public void before(){
-        stall = new Stall("Bill's Beers", "Billy", 3);
+        stall = new Stall("Bill's Beers", "Billy", 3, 9);
     }
 
     @Test
