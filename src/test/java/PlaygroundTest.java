@@ -15,7 +15,7 @@ public class PlaygroundTest {
     }
 
     @Test
-    public void allowedToUse(){
+    public void under15ToUsePlayground(){
         assertEquals(false, playground.isAllowedTo(visitor));
     }
 }
