@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public interface IReviewed {
 
-    public int getRating();
+    int getRating();
 
-    public String getName();
+    String getName();
 }
